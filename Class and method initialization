@@ -1,0 +1,37 @@
+everyone = []           #create an empty list
+
+class People:           #creates an initialized class 
+    def __init__(self, name, address, phone, email):
+        self.name = name
+        self.address = address
+        self.phone = phone
+        self.email = email
+
+def contact_new():      #New contact function
+    print('Enter New Contact Information')
+    
+    name = input('Enter Contact Name: ')
+    address = input('Enter Contact Address: ')
+    phone = input('Enter Contact Phone Number: ')
+    
+    #an instance of People clsss is created
+    person = People(name=name, address=address, phone=phone)
+    
+    #add person to everyone list
+    everyone.append(person)
+    
+
+contact_new()
+print(person)
+        
+    
+
+
+    
+    
+        
+
+
+
+
+
