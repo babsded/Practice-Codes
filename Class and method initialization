@@ -13,16 +13,20 @@ def contact_new():      #New contact function
     name = input('Enter Contact Name: ')
     address = input('Enter Contact Address: ')
     phone = input('Enter Contact Phone Number: ')
+    email = input('Enter Contact email: ')
     
     #an instance of People clsss is created
-    person = People(name=name, address=address, phone=phone)
+    person = People(name=name, address=address, phone=phone, email=email)
     
     #add person to everyone list
     everyone.append(person)
     
 
 contact_new()
-print(person)
+if len(person.name) > 5:
+    print('Name is too long')
+else:
+    print('Name length is just OK')
         
     
 
