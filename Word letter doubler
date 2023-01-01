@@ -1,0 +1,10 @@
+''' Function accepts string and returns every letter of string doubled'''
+def double_string():
+    text = input('Enter text to be doubled: ')
+    for letter in text:
+        #double_letter = letter * 2
+        print(letter * 2, end='')
+        
+
+
+double_string()

@@ -1,0 +1,20 @@
+range_list = []
+
+def counter(stop,step):
+    print('This is meant to be a counter function. Input number to start from:')
+    num_str = input('Enter integer number to begin counter:')
+    num_int = int(num_str)
+    #multiplication of 5s
+    multiplier = 1
+    for x in range(num_int,stop,step):
+        answer = multiplier * x
+        range_list.append(answer)
+        print(f"{multiplier} times {x} gives {answer} ")
+        multiplier +=1
+    
+
+    print(range_list)
+
+
+counter(105,5)
+        

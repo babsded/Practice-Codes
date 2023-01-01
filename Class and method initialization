@@ -7,27 +7,28 @@ class People:           #creates an initialized class
         self.phone = phone
         self.email = email
 
-def contact_new():      #New contact function
-    print('Enter New Contact Information')
-    
-    name = input('Enter Contact Name: ')
-    address = input('Enter Contact Address: ')
-    phone = input('Enter Contact Phone Number: ')
-    email = input('Enter Contact email: ')
-    
-    #an instance of People clsss is created
-    person = People(name=name, address=address, phone=phone, email=email)
-    
-    #add person to everyone list
-    everyone.append(person)
-    
-
-contact_new()
-if len(person.name) > 5:
-    print('Name is too long')
-else:
-    print('Name length is just OK')
+    def contact_new(self):      #New contact function
+        print('Enter New Contact Information')
         
+        name = input('Enter Contact Name: ')
+        address = input('Enter Contact Address: ')
+        phone = input('Enter Contact Phone Number: ')
+        email = input('Enter Contact email: ')
+    
+    def save_to_list(self):
+        everyone.append(person)
+        
+    def show_list(self):
+        print(everyone)
+         
+
+
+#an instance of People clsss is created
+person = People(name='tunde', address="festac", phone=1234, email='babsa@hgfj.com')
+person.contact_new()
+person.save_to_list()
+person.show_list()       
+
     
 
 
